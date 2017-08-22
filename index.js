@@ -1,8 +1,7 @@
-var crawler = require('./crawler.js')
-
 var db = new PouchDB('newscrawler')
 PouchDB.debug.enable('*')
 
+window.bus = new Vue()
 
 var vm = new Vue({
     el: "#app",
@@ -13,3 +12,5 @@ var vm = new Vue({
 
     }
 })
+
+var ft = require('./sites/ft.js')
