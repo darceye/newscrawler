@@ -13,4 +13,5 @@ var vm = new Vue({
     }
 })
 
-var ft = require('./sites/ft.js')
+// var ft = require('./sites/ft.js')
+var ft = require('./sites/ftchinese.js')
